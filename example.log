@@ -1,0 +1,408 @@
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getNewApplication took 112ms
+INFO main org.apache.hadoop.conf.Configuration - resource-types.xml not found
+INFO main org.apache.hadoop.yarn.util.resource.ResourceUtils - Unable to find 'resource-types.xml'.
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = vcores, units = , type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-vcores'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-vcores'
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (1239548589) connection to /139.9.154.175:8032 from ChinaArmand sending #1 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.submitApplication
+DEBUG IPC Client (1239548589) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (1239548589) connection to /139.9.154.175:8032 from ChinaArmand got value #1
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: submitApplication took 17ms
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (1239548589) connection to /139.9.154.175:8032 from ChinaArmand sending #2 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getApplicationReport
+DEBUG IPC Client (1239548589) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (1239548589) connection to /139.9.154.175:8032 from ChinaArmand got value #2
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getApplicationReport took 15ms
+INFO main org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1634549891783_0018
+DEBUG main org.apache.hadoop.util.Shell - Failed to detect a valid hadoop home directory
+java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:42)
+WARN main org.apache.hadoop.util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:42)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.util.Shell - Failed to find winutils.exe
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:42)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+DEBUG main org.apache.hadoop.security.SecurityUtil - Setting hadoop.security.token.service.use_ip to true
+DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - java.library.path=D:\EXE\java\java8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\EXE\python2\;D:\EXE\python2\Scripts;C:\Users\17786\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\17786\AppData\Local\Programs\Python\Python38\;E:\Program Files (x86)\vmware\bin\;D:\EXE\python\Scripts\;D:\EXE\python\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Program Files (x86)\xshell\;E:\Program Files (x86)\netcat-win32-1.12;E:\Program Files (x86)\netox;E:\Program Files (x86)\Nmap;E:\Program Files (x86)\xray;E:\securityTools\LCX-master;D:\EXE\java\java8\bin;D:\EXE\java\java8\jre\bin;C:\metasploit-framework\bin;E:\Program Files (x86)\mingw-w64\mingw64\bin;D:\EXE\scala\bin;";D:\EXE\scala\jre\bin";E:\apache-maven-3.8.2\bin;E:\apache-tomcat-8.5.55\bin;E:\apache-tomcat-8.5.55\lib;D:\EXE\python3.7\Scripts\;D:\EXE\python3.7\;C:\Users\17786\AppData\Local\Microsoft\WindowsApps;;.
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Falling back to shell based
+DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Hadoop login
+DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using local user: NTUserPrincipal: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "NTUserPrincipal: ChinaArmand" with name: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "ChinaArmand"
+DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser: ChinaArmand (auth:SIMPLE)
+INFO main org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider - Connecting to ResourceManager at /139.9.154.175:8032
+DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction [as: ChinaArmand (auth:SIMPLE)][action: org.apache.hadoop.yarn.client.RMProxy$1@543788f3]
+java.lang.Exception
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1852)
+	at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:145)
+	at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:65)
+	at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:172)
+	at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:132)
+	at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:103)
+	at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:73)
+	at org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:242)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:46)
+DEBUG main org.apache.hadoop.yarn.ipc.YarnRPC - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+DEBUG main org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@564718df
+DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: Client-86c1f6ac522648a29b9d7c02a383ec5e
+DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+DEBUG main org.apache.hadoop.ipc.Client - Connecting to /139.9.154.175:8032
+DEBUG main org.apache.hadoop.ipc.Client - Setup connection to /139.9.154.175:8032
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand: starting, having connections 1
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #0 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getNewApplication
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #0
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getNewApplication took 112ms
+INFO main org.apache.hadoop.conf.Configuration - resource-types.xml not found
+INFO main org.apache.hadoop.yarn.util.resource.ResourceUtils - Unable to find 'resource-types.xml'.
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = vcores, units = , type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-vcores'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-vcores'
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #1 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.submitApplication
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #1
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: submitApplication took 18ms
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #2 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getApplicationReport
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #2
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getApplicationReport took 17ms
+INFO main org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1634549891783_0019
+DEBUG main org.apache.hadoop.util.Shell - Failed to detect a valid hadoop home directory
+java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:42)
+WARN main org.apache.hadoop.util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:42)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.util.Shell - Failed to find winutils.exe
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:42)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+DEBUG main org.apache.hadoop.security.SecurityUtil - Setting hadoop.security.token.service.use_ip to true
+DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - java.library.path=D:\EXE\java\java8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\EXE\python2\;D:\EXE\python2\Scripts;C:\Users\17786\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\17786\AppData\Local\Programs\Python\Python38\;E:\Program Files (x86)\vmware\bin\;D:\EXE\python\Scripts\;D:\EXE\python\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Program Files (x86)\xshell\;E:\Program Files (x86)\netcat-win32-1.12;E:\Program Files (x86)\netox;E:\Program Files (x86)\Nmap;E:\Program Files (x86)\xray;E:\securityTools\LCX-master;D:\EXE\java\java8\bin;D:\EXE\java\java8\jre\bin;C:\metasploit-framework\bin;E:\Program Files (x86)\mingw-w64\mingw64\bin;D:\EXE\scala\bin;";D:\EXE\scala\jre\bin";E:\apache-maven-3.8.2\bin;E:\apache-tomcat-8.5.55\bin;E:\apache-tomcat-8.5.55\lib;D:\EXE\python3.7\Scripts\;D:\EXE\python3.7\;C:\Users\17786\AppData\Local\Microsoft\WindowsApps;;.
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Falling back to shell based
+DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Hadoop login
+DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using local user: NTUserPrincipal: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "NTUserPrincipal: ChinaArmand" with name: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "ChinaArmand"
+DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser: ChinaArmand (auth:SIMPLE)
+INFO main org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider - Connecting to ResourceManager at /139.9.154.175:8032
+DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction [as: ChinaArmand (auth:SIMPLE)][action: org.apache.hadoop.yarn.client.RMProxy$1@543788f3]
+java.lang.Exception
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1852)
+	at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:145)
+	at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:65)
+	at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:172)
+	at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:132)
+	at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:103)
+	at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:73)
+	at org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:242)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:46)
+DEBUG main org.apache.hadoop.yarn.ipc.YarnRPC - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+DEBUG main org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@564718df
+DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: Client-7550e8fbc5e74218baeb144333f92bb6
+DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+DEBUG main org.apache.hadoop.ipc.Client - Connecting to /139.9.154.175:8032
+DEBUG main org.apache.hadoop.ipc.Client - Setup connection to /139.9.154.175:8032
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand: starting, having connections 1
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #0 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getNewApplication
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #0
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getNewApplication took 111ms
+INFO main org.apache.hadoop.conf.Configuration - resource-types.xml not found
+INFO main org.apache.hadoop.yarn.util.resource.ResourceUtils - Unable to find 'resource-types.xml'.
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = vcores, units = , type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-vcores'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-vcores'
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #1 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.submitApplication
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #1
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: submitApplication took 23ms
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #2 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getApplicationReport
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #2
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getApplicationReport took 17ms
+INFO main org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1634549891783_0020
+DEBUG main org.apache.hadoop.util.Shell - Failed to detect a valid hadoop home directory
+java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:40)
+WARN main org.apache.hadoop.util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:40)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.util.Shell - Failed to find winutils.exe
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:40)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+DEBUG main org.apache.hadoop.security.SecurityUtil - Setting hadoop.security.token.service.use_ip to true
+DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - java.library.path=D:\EXE\java\java8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\EXE\python2\;D:\EXE\python2\Scripts;C:\Users\17786\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\17786\AppData\Local\Programs\Python\Python38\;E:\Program Files (x86)\vmware\bin\;D:\EXE\python\Scripts\;D:\EXE\python\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Program Files (x86)\xshell\;E:\Program Files (x86)\netcat-win32-1.12;E:\Program Files (x86)\netox;E:\Program Files (x86)\Nmap;E:\Program Files (x86)\xray;E:\securityTools\LCX-master;D:\EXE\java\java8\bin;D:\EXE\java\java8\jre\bin;C:\metasploit-framework\bin;E:\Program Files (x86)\mingw-w64\mingw64\bin;D:\EXE\scala\bin;";D:\EXE\scala\jre\bin";E:\apache-maven-3.8.2\bin;E:\apache-tomcat-8.5.55\bin;E:\apache-tomcat-8.5.55\lib;D:\EXE\python3.7\Scripts\;D:\EXE\python3.7\;C:\Users\17786\AppData\Local\Microsoft\WindowsApps;;.
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Falling back to shell based
+DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Hadoop login
+DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using local user: NTUserPrincipal: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "NTUserPrincipal: ChinaArmand" with name: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "ChinaArmand"
+DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser: ChinaArmand (auth:SIMPLE)
+INFO main org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider - Connecting to ResourceManager at /139.9.154.175:8032
+DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction [as: ChinaArmand (auth:SIMPLE)][action: org.apache.hadoop.yarn.client.RMProxy$1@543788f3]
+java.lang.Exception
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1852)
+	at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:145)
+	at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:65)
+	at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:172)
+	at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:132)
+	at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:103)
+	at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:73)
+	at org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:242)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:44)
+DEBUG main org.apache.hadoop.yarn.ipc.YarnRPC - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+DEBUG main org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@564718df
+DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: Client-010d9535da494f949a69b5b02358f43b
+DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+DEBUG main org.apache.hadoop.ipc.Client - Connecting to /139.9.154.175:8032
+DEBUG main org.apache.hadoop.ipc.Client - Setup connection to /139.9.154.175:8032
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand: starting, having connections 1
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #0 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getNewApplication
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #0
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getNewApplication took 128ms
+INFO main org.apache.hadoop.conf.Configuration - resource-types.xml not found
+INFO main org.apache.hadoop.yarn.util.resource.ResourceUtils - Unable to find 'resource-types.xml'.
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = vcores, units = , type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-vcores'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-vcores'
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #1 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.submitApplication
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #1
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: submitApplication took 25ms
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand sending #2 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getApplicationReport
+DEBUG IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (433874882) connection to /139.9.154.175:8032 from ChinaArmand got value #2
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getApplicationReport took 24ms
+INFO main org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1634549891783_0021
+DEBUG main org.apache.hadoop.util.Shell - Failed to detect a valid hadoop home directory
+java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:44)
+WARN main org.apache.hadoop.util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:44)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.util.Shell - Failed to find winutils.exe
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:548)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:569)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:592)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:689)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.yarn.conf.YarnConfiguration.<clinit>(YarnConfiguration.java:1254)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:44)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:468)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:439)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:516)
+	... 3 more
+DEBUG main org.apache.hadoop.service.AbstractService - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+DEBUG main org.apache.hadoop.security.SecurityUtil - Setting hadoop.security.token.service.use_ip to true
+DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - java.library.path=D:\EXE\java\java8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\EXE\python2\;D:\EXE\python2\Scripts;C:\Users\17786\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\17786\AppData\Local\Programs\Python\Python38\;E:\Program Files (x86)\vmware\bin\;D:\EXE\python\Scripts\;D:\EXE\python\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Program Files (x86)\xshell\;E:\Program Files (x86)\netcat-win32-1.12;E:\Program Files (x86)\netox;E:\Program Files (x86)\Nmap;E:\Program Files (x86)\xray;E:\securityTools\LCX-master;D:\EXE\java\java8\bin;D:\EXE\java\java8\jre\bin;C:\metasploit-framework\bin;E:\Program Files (x86)\mingw-w64\mingw64\bin;D:\EXE\scala\bin;";D:\EXE\scala\jre\bin";E:\apache-maven-3.8.2\bin;E:\apache-tomcat-8.5.55\bin;E:\apache-tomcat-8.5.55\lib;D:\EXE\python3.7\Scripts\;D:\EXE\python3.7\;C:\Users\17786\AppData\Local\Microsoft\WindowsApps;;.
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Falling back to shell based
+DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Hadoop login
+DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using local user: NTUserPrincipal: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "NTUserPrincipal: ChinaArmand" with name: ChinaArmand
+DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "ChinaArmand"
+DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser: ChinaArmand (auth:SIMPLE)
+INFO main org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider - Connecting to ResourceManager at /139.9.154.175:8032
+DEBUG main org.apache.hadoop.security.UserGroupInformation - PrivilegedAction [as: ChinaArmand (auth:SIMPLE)][action: org.apache.hadoop.yarn.client.RMProxy$1@76707e36]
+java.lang.Exception
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1852)
+	at org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:145)
+	at org.apache.hadoop.yarn.client.DefaultNoHARMFailoverProxyProvider.init(DefaultNoHARMFailoverProxyProvider.java:65)
+	at org.apache.hadoop.yarn.client.RMProxy.createNonHaRMFailoverProxyProvider(RMProxy.java:172)
+	at org.apache.hadoop.yarn.client.RMProxy.newProxyInstance(RMProxy.java:132)
+	at org.apache.hadoop.yarn.client.RMProxy.createRMProxy(RMProxy.java:103)
+	at org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:73)
+	at org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:242)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)
+	at com.hadoop.authentication.YarnRPCUnauthenticationAccess.main(YarnRPCUnauthenticationAccess.java:48)
+DEBUG main org.apache.hadoop.yarn.ipc.YarnRPC - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+DEBUG main org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+DEBUG main org.apache.hadoop.ipc.Server - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@3891771e
+DEBUG main org.apache.hadoop.ipc.Client - getting client out of cache: Client-0f40995fd1284c4fb9212673ab05cf45
+DEBUG main org.apache.hadoop.service.AbstractService - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+DEBUG main org.apache.hadoop.ipc.Client - The ping interval is 60000 ms.
+DEBUG main org.apache.hadoop.ipc.Client - Connecting to /139.9.154.175:8032
+DEBUG main org.apache.hadoop.ipc.Client - Setup connection to /139.9.154.175:8032
+DEBUG IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand: starting, having connections 1
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand sending #0 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getNewApplication
+DEBUG IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand got value #0
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getNewApplication took 111ms
+INFO main org.apache.hadoop.conf.Configuration - resource-types.xml not found
+INFO main org.apache.hadoop.yarn.util.resource.ResourceUtils - Unable to find 'resource-types.xml'.
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = vcores, units = , type = COUNTABLE
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.memory-mb.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-mb'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.minimum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.minimum-allocation-vcores'
+DEBUG main org.apache.hadoop.yarn.util.resource.ResourceUtils - Mandatory Resource 'yarn.resource-types.vcores.maximum-allocation' is not configured in resource-types config file. Setting allocation specified using 'yarn.scheduler.maximum-allocation-vcores'
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand sending #1 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.submitApplication
+DEBUG IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand got value #1
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: submitApplication took 26ms
+DEBUG IPC Parameter Sending Thread #0 org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand sending #2 org.apache.hadoop.yarn.api.ApplicationClientProtocolPB.getApplicationReport
+DEBUG IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand org.apache.hadoop.ipc.Client - IPC Client (246399377) connection to /139.9.154.175:8032 from ChinaArmand got value #2
+DEBUG main org.apache.hadoop.ipc.ProtobufRpcEngine2 - Call: getApplicationReport took 27ms
+INFO main org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1634549891783_0026
